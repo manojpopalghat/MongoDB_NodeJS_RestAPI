@@ -25,7 +25,7 @@ mongod
 ```shell
 node init
 ```
-Because all dependencies are not uploaded.(Please Check package.json)
+Because all dependencies are not uploaded.(Please Check [package.json](App/package.json))
 ```shell
 npm install express
 ```
