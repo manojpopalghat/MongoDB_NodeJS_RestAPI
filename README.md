@@ -1,5 +1,10 @@
 # MongoDB_NodeJS_RestAPI
 
+Web App contains 
+’[Index/App](App/app.js)’,
+’[Configuration](App/package.json)’,
+‘[Model](App/models/student.js)’,
+’[Controller](App/routes/students.js)’
 CRUD Operations with MongoDB in NodeJS, which supports `POST`(Create), `GET` (Read),`PUT/PATCH` (Update), `DELETE` APIs
 
 User Schema is,  
@@ -14,18 +19,41 @@ User Schema is,
   }
 ## Test API's
 
+### Start & Install Dependancies
+```shell
+mongod
+```
+```shell
+node init
+```
+```shell
+npm install express
+```
+```shell
+npm install mongodb
+```
+```shell
+npm install mongoose
+```
+```shell
+npm install -g nodemon --save-dev
+```
+Because all dependencies are not uploaded.(Please Check package.json)
+
+```shell
+nodemon run start
+```
+To start the Application
+
+
 ### 1)READ API:
 To test the read api, open POSTMAN and enter the following as the request URL.  
 http://localhost:9000/students  
 Select Method ‘GET’, and enter above request to read all students, this will return Array of JSON Objects.
 
-![](CRUD/Images/get_all.png)
-
 To read user with some id enter below request  
 http://localhost:9000/students/id
 This will return student’s JSON having given id.
-
-![](CRUD/Images/get_by_id.png)
 
 
 ### 2)CREATE API:
@@ -41,9 +69,7 @@ e.g.
       "subject":"MongoDB",
       "Teacher":"Prof. Mane"
   }
-  
-  ![](CRUD/Images/post.png)
-  
+   
 
 ### 3)UPDATE API:
 To test the update api, open POSTMAN and enter the following as the request URL.  
@@ -59,7 +85,6 @@ e.g.
       "Teacher":"Prof. Patil"
   }   
   
-  ![](CRUD/Images/put.png)
 
 ### 4)DELETE API:
 To test the delete api, open POSTMAN and enter the following as the request URL.  
@@ -67,4 +92,3 @@ http://localhost:9000/students/id
 Select Method ‘DELETE’  
 i.e. this method deletes student of given id and returns user’s JSON having that id
 
-![](CRUD/Images/delete.png)
