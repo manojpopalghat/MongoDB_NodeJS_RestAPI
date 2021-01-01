@@ -1,13 +1,13 @@
 # MongoDB_NodeJS_RestAPI
 
 Web App contains 
-’[Index/App](App/app.js)’,
-’[Configuration](App/package.json)’,
-‘[Model](App/models/student.js)’,
-’[Controller](App/routes/students.js)’
-CRUD Operations with MongoDB in NodeJS, which supports `POST`(Create), `GET` (Read),`PUT/PATCH` (Update), `DELETE` APIs
+’[Index/App](App/app.js)’,\
+’[Configuration](App/package.json)’,\
+‘[Model](App/models/student.js)’,\
+’[Controller](App/routes/students.js)’\
+CRUD Operations with MongoDB in NodeJS, which supports `POST`(Create), `GET` (Read),`PUT/PATCH` (Update), `DELETE` APIs\
 
-User Schema is,  
+User Schema is,\  
   Student Object  
   {      
        \_id : Number  
@@ -17,15 +17,15 @@ User Schema is,
        subject : String  
        teacher : String  
   }
-## Test API's
 
-### Start & Install Dependancies
+## Start & Install Dependancies
 ```shell
 mongod
 ```
 ```shell
 node init
 ```
+Because all dependencies are not uploaded.(Please Check package.json)
 ```shell
 npm install express
 ```
@@ -38,13 +38,13 @@ npm install mongoose
 ```shell
 npm install -g nodemon --save-dev
 ```
-Because all dependencies are not uploaded.(Please Check package.json)
 
 ```shell
 nodemon run start
 ```
 To start the Application
 
+## Test API's
 
 ### 1)READ API:
 To test the read api, open POSTMAN and enter the following as the request URL.  
